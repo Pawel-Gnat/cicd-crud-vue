@@ -20,4 +20,3 @@ const { tasks, addTask, removeTask } = useTasks()
 </template>
 
 <style scoped></style>
-./store/useTasks
