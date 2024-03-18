@@ -2,7 +2,7 @@ import { defineConfig, loadEnv, splitVendorChunkPlugin } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import packageJson from './package.json'
 
-const env = loadEnv('', process.cwd(), 'VITE')
+const env = loadEnv('production', process.cwd(), 'VITE')
 console.log(env)
 
 export default defineConfig({

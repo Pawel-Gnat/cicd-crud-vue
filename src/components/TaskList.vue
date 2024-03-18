@@ -16,7 +16,7 @@
 <script setup lang="ts">
 import { defineProps, defineEmits } from 'vue'
 
-const props = defineProps<{ tasks: string[] }>()
+defineProps<{ tasks: string[] }>()
 const emits = defineEmits(['removeTask'])
 
 const removeTask = (index: number) => {
