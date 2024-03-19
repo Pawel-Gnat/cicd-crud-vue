@@ -14,9 +14,12 @@
 		"vue": "^3.4.21"
 	},
 	"devDependencies": {
+		"@testing-library/vue": "8.0.3",
 		"@types/node": "^20.11.28",
 		"@vitejs/plugin-vue": "^5.0.4",
+		"@vue/test-utils": "2.4.5",
 		"cross-env": "^7.0.3",
+		"jsdom": "24.0.0",
 		"typescript": "^5.2.2",
 		"vite": "^5.1.6",
 		"vitest": "1.4.0",
