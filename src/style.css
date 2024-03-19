@@ -96,3 +96,17 @@ ul {
 h1 {
 	font-size: 3rem;
 }
+
+button {
+	padding: 0.5rem 1rem;
+	margin-left: 1rem;
+	border: 1px solid darkblue;
+	border-radius: 0.5rem;
+	background-color: transparent;
+	outline: none;
+}
+
+button:hover,
+button:focus-visible {
+	outline: 1px solid green;
+}
