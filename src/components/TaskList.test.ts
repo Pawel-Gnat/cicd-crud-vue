@@ -1,5 +1,5 @@
 import { describe, expect, afterEach, test } from 'vitest'
-import { render, fireEvent, cleanup, screen } from '@testing-library/vue'
+import { render, cleanup, screen } from '@testing-library/vue'
 
 import TaskList from './TaskList.vue'
 
