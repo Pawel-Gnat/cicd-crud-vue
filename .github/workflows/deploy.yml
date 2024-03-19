@@ -1,7 +1,11 @@
-name: Build and Deploy to Netlify
+name: Deploy
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
+    inputs:
+      deploy-netlify:
+        type: boolean
+        description: Enable Netlify deployment
+        default: true
 
 jobs:
   deploy:
