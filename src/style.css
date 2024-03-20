@@ -1,15 +1,15 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-	-moz-text-size-adjust: none;
-	-webkit-text-size-adjust: none;
-	text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body,
@@ -22,17 +22,17 @@ figure,
 blockquote,
 dl,
 dd {
-	margin-block-end: 0;
+  margin-block-end: 0;
 }
 
 ul[role='list'],
 ol[role='list'] {
-	list-style: none;
+  list-style: none;
 }
 
 body {
-	min-height: 100vh;
-	line-height: 1.5;
+  min-height: 100vh;
+  line-height: 1.5;
 }
 
 h1,
@@ -42,72 +42,72 @@ h4,
 button,
 input,
 label {
-	line-height: 1.1;
+  line-height: 1.1;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	text-wrap: balance;
+  text-wrap: balance;
 }
 
 a:not([class]) {
-	text-decoration-skip-ink: auto;
-	color: currentColor;
+  text-decoration-skip-ink: auto;
+  color: currentColor;
 }
 
 img,
 picture {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
 
 input,
 button,
 textarea,
 select {
-	font: inherit;
+  font: inherit;
 }
 
 textarea:not([rows]) {
-	min-height: 10em;
+  min-height: 10em;
 }
 
 :target {
-	scroll-margin-block: 5ex;
+  scroll-margin-block: 5ex;
 }
 
 #app {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 ul {
-	li {
-		margin-block: 8px;
-	}
+  li {
+    margin-block: 8px;
+  }
 }
 
 h1 {
-	font-size: 3rem;
-	color: darkblue;
+  font-size: 3rem;
+  color: darkblue;
 }
 
 button {
-	padding: 0.5rem 1rem;
-	margin-left: 1rem;
-	border: 1px solid darkblue;
-	border-radius: 0.5rem;
-	background-color: transparent;
-	outline: none;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  border: 1px solid darkblue;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  outline: none;
 }
 
 button:hover,
 button:focus-visible {
-	outline: 1px solid green;
+  outline: 1px solid green;
 }
