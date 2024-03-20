@@ -6,8 +6,11 @@ on:
       - main
 
 jobs:
-  deploy:
+  pr-check:
     runs-on: ubuntu-latest
+    environment:
+      name: 'Preview'
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
