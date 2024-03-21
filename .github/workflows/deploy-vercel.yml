@@ -33,3 +33,14 @@ jobs:
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+  e2e-tests:
+    needs: deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: 'Staging'
+    steps:
+      - name: Run E2E tests
+        run: npm run test:e2e
+        env:
+          BASE_URL: 'https://cicd-crud-vue.vercel.app/'
