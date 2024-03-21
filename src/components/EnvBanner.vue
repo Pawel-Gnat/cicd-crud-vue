@@ -20,6 +20,6 @@ const isVisible = visibleEnvs.includes(projectEnvironment);
   right: 16px;
   padding: 16px 8px;
   background-color: #f0f0f0;
-  color: #333;
+  color: #1a1919;
 }
 </style>
