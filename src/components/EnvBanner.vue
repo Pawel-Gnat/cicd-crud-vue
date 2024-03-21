@@ -2,7 +2,7 @@
 const appVersion = __APP_VERSION__;
 const projectEnvironment = import.meta.env.VITE_APP;
 
-const visibleEnvs = ['PREVIEW', 'DEVELOPMENT', 'STAGING'];
+const visibleEnvs = ['PRODUCTION', 'DEVELOPMENT'];
 
 const isVisible = visibleEnvs.includes(projectEnvironment);
 </script>
