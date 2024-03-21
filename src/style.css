@@ -70,6 +70,11 @@ select {
   font: inherit;
 }
 
+a {
+  font: inherit;
+  color: inherit;
+}
+
 textarea:not([rows]) {
   min-height: 10em;
 }
@@ -87,14 +92,25 @@ textarea:not([rows]) {
   gap: 16px;
 }
 
+main {
+  text-align: center;
+}
+
 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   li {
     margin-block: 8px;
   }
 }
 
-h1 {
-  font-size: 3rem;
+h1,
+h2 {
+  font-size: 2rem;
+  margin-top: 16px;
   color: darkblue;
 }
 
@@ -110,4 +126,10 @@ button {
 button:hover,
 button:focus-visible {
   outline: 1px solid green;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
