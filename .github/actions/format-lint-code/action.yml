@@ -1,0 +1,10 @@
+name: Lint and Format code
+description: Format and Lint Code
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Lint and format code
+      run: |
+        npm run lint
+        npm run format
