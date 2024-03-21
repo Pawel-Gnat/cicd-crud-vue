@@ -20,7 +20,7 @@ jobs:
         uses: ./.github/actions/format-lint-code
 
       - name: Run unit tests
-        run: npm run test
+        uses: ./.github/actions/unit-tests
 
       - name: Build app
         run: npm run build

@@ -1,21 +1,16 @@
 <script setup lang="ts">
-const appVersion = __APP_VERSION__;
-const viteCrud = import.meta.env.VITE_APP;
-
 import EnvBanner from './components/EnvBanner.vue';
-import TaskForm from './components/TaskForm.vue';
-import TaskList from './components/TaskList.vue';
-
-import { useTasks } from './store/useTasks';
-
-const { tasks, addTask, removeTask } = useTasks();
 </script>
 
 <template>
-  <h1>{{ appVersion }} - {{ viteCrud }}</h1>
-  <TaskForm @addTask="addTask" />
-  <TaskList :tasks="tasks" @removeTask="removeTask" />
-  <EnvBanner />
+  <nav>
+    <RouterLink to="/">Go to Home</RouterLink>
+    <RouterLink to="/about">Go to About</RouterLink>
+  </nav>
+  <main>
+    <RouterView />
+    <EnvBanner />
+  </main>
 </template>
 
 <style scoped></style>

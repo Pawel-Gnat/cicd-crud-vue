@@ -12,16 +12,19 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "4.3.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.42.1",
     "@testing-library/vue": "8.0.3",
-    "@types/node": "^20.11.28",
+    "@types/node": "20.11.30",
     "@typescript-eslint/eslint-plugin": "7.3.1",
     "@typescript-eslint/parser": "7.3.1",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/test-utils": "2.4.5",
     "cross-env": "^7.0.3",
+    "dotenv": "16.4.5",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-vue": "9.23.0",
