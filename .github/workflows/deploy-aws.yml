@@ -33,4 +33,4 @@ jobs:
           aws-region: eu-central-1
 
       - name: Deploy to AWS
-        run: aws s3 sync dist s3://cicd-crud-vue
+        run: aws s3 sync dist s3://cicd-vue-test
