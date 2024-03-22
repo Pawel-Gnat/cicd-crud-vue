@@ -1,0 +1,36 @@
+name: Deploy - AWS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: 'Production'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure node
+        uses: ./.github/actions/setup-project
+
+      - name: Format/Lint code
+        uses: ./.github/actions/format-lint-code
+
+      - name: Run unit tests
+        uses: ./.github/actions/unit-tests
+
+      - name: Build app
+        run: npm run build
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-central-1
+
+      - name: Deploy to AWS
+        run: aws s3 sync dist s3://cicd-crud-vue

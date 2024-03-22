@@ -72,7 +72,19 @@ select {
 
 a {
   font: inherit;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
   color: inherit;
+  transition:
+    0.3s color,
+    0.3s border-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darkblue;
+    border-color: darkblue;
+  }
 }
 
 textarea:not([rows]) {
