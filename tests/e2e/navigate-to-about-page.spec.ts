@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('navigation from HomePage to AboutPage', async ({ page }) => {
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://cicd-crud-vue.vercel.app/');
 
   await expect(page.locator('input[placeholder="Add new task"]')).toBeVisible();
   await expect(page.locator('button:text("Add task")')).toBeVisible();
