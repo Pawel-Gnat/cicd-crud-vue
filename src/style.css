@@ -82,8 +82,8 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: darkblue;
-    border-color: darkblue;
+    color: darkred;
+    border-color: darkred;
   }
 }
 
