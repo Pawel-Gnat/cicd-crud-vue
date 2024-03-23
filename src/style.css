@@ -133,6 +133,7 @@ button {
   border-radius: 0.5rem;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 button:hover,
@@ -144,4 +145,25 @@ nav {
   display: flex;
   justify-content: center;
   gap: 16px;
+}
+
+input {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid darkblue;
+}
+
+input::-webkit-input-placeholder {
+  color: #909;
+}
+input:-moz-placeholder,
+input::-moz-placeholder {
+  color: #909;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+input::-ms-input-placeholder,
+input::placeholder {
+  color: #909;
 }
