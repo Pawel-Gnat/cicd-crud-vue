@@ -1,6 +1,7 @@
 data "external" "lambda_builder_sh" {
-  program = ["cmd", "/C", "cd ${var.lambda_source_dir} && npm install >NUL 2>&1 && npm run build >NUL 2>&1 && echo {}"]
+  program = ["bash", "-c", "cd ${var.lambda_source_dir} && npm install > '/dev/null' 2>&1 && npm run build > '/dev/null' 2>&1 && echo \"{ }\" "]
 }
+
 
 resource "aws_iam_role" "iam_role_for_lambda" {
   name = "LambdaExecutionRole"
