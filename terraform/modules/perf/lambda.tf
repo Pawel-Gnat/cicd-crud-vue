@@ -1,4 +1,6 @@
-data "external" "lambda_builder_sh" { program = ["PowerShell", "-Command", "& {npm install >$null; npm run build >$null; echo '{}'}"] }
+data "external" "lambda_builder_sh" {
+  program = ["cmd", "/C", "cd ${var.lambda_source_dir} && npm install >NUL 2>&1 && npm run build >NUL 2>&1 && echo {}"]
+}
 
 resource "aws_iam_role" "iam_role_for_lambda" {
   name = "LambdaExecutionRole"
