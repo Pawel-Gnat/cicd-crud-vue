@@ -13,6 +13,8 @@
     "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
+    "@featurevisor/sdk": "1.11.1",
+    "@featurevisor/vue": "1.11.1",
     "vue": "^3.4.21",
     "vue-router": "4.3.0"
   },
